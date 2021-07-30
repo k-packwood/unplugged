@@ -84,8 +84,173 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   BASE STYLES
    ========================================================================== */
+
+/* ---------- Main - Base styles ---------- */
+body {}
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+p {}
+
+/* ---------- Main - Header styles ---------- */
+header {}
+
+header .content-wrapper {} 
+
+#logo {}
+
+.header-divider {}
+
+nav {}
+
+nav ul {}
+
+nav ul li {}
+
+/* ---------- Main - Footer styles ---------- */
+footer {}
+
+footer .content-wrapper {}
+
+.contact {}
+
+.contact h3 {}
+
+.contact address {}
+
+.contact address p {}
+
+.social-icons {}
+
+.social-icons h3 {}
+
+.social-icons a {}
+
+.social-icons a img {}
+
+.copyright {}
+
+.copyright p {}
+
+
+/* ==========================================================================
+    HOME 
+   ========================================================================== */
+
+/* ---------- Home - Headline styles ---------- */
+#headline {}
+
+#headline h1 {}
+
+#headline img {}
+
+/* ---------- Home - Aside + form styles ---------- */
+
+aside {}
+
+aside h4 {}
+
+aside p {}
+
+aside form {}
+
+input#email-input {}
+
+input#submit {}
+
+/* ---------- Home - Features styles ---------- */
+#features {}
+
+#features .content-wrapper {}
+
+.feature {}
+
+.feature img {}
+
+.feature p {}
+
+/* ---------- Home - Review styles ---------- */
+#review {}
+
+#review .content-wrapper {}
+
+#review h1 {}
+
+#review article {}
+
+#review article img {}
+
+#review article h3 {}
+
+#review article p {}
+
+
+/* ==========================================================================
+    ABOUT 
+   ========================================================================== */
+
+/* ---------- About - Mission styles ---------- */
+#mission {}
+
+#mission .content-wrapper {}
+
+#mission h1 {}
+
+#mission p {}
+
+/* ---------- About - Map styles ---------- */
+#map {}
+
+#map figure{}
+
+/* ---------- About - Contact styles ---------- */
+#contact-section {}
+
+#contact-section .content-wrapper {}
+
+#contact-section h1 {}
+
+#general-info {}
+
+#general-info h3 {}
+
+#general-info address {}
+
+#general-info address p {}
+
+#chat {}
+
+#chat h3 {}
+
+#chat address {}
+
+#chat address p {}
+
+
+
+/* ==========================================================================
+    FAQ 
+   ========================================================================== */
+
+/* ---------- FAQ - Main styles ---------- */
+#main {}
+
+#main .content-wrapper {}
+
+#main article {}
+
+#main article h3 {}
+
+#main article p {}
+
 
 /* ==========================================================================
    Helper classes
