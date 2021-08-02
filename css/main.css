@@ -88,7 +88,10 @@ textarea {
    ========================================================================== */
 
 /* ---------- Main - Base styles ---------- */
-body {}
+body {
+  font-size: 16px;
+  padding: 15px 20px 10px 20px; 
+}
 
 h1 {}
 
@@ -113,9 +116,13 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
 } 
 
-#logo {}
+.logo {
+  width: 60%;
+  padding: 0.645em;
+}
 
 .header-divider {}
 
@@ -124,16 +131,21 @@ nav {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 45%;
 }
 
 nav ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li { 
   list-style: none;
+  padding: 1em;
+  text-transform: uppercase;
 }
 
 /* ---------- Main - Footer styles ---------- */
@@ -142,6 +154,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding-top: 3.125em;
 }
 
 footer .content-wrapper {
@@ -154,29 +167,48 @@ footer .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
+  margin-bottom: 3.125em;
 }
 
-.contact h3 {}
+.contact h3 {
+  margin-bottom: 1.25em;
+  width: 100%;
+  text-align: center;
+}
 
 .contact address {}
 
-.contact address p {}
+.contact address p {
+  margin: 0;
+  text-align: center;
+}
 
 .social-icons {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  flex-flow: row wrap;
+  margin-bottom: 3.125em;
 }
 
-.social-icons h3 {}
+.social-icons h3 {
+  margin-bottom: 1.25em;
+  width: 100%;
+  text-align: center;
+}
 
-.social-icons a {}
+.social-icons a {
+  width: 2.5%;
+}
 
 .social-icons a img {}
 
 .copyright {}
 
-.copyright p {}
+.copyright p {
+  margin: 0;
+}
 
 
 /* ==========================================================================
@@ -184,7 +216,9 @@ footer .content-wrapper {
    ========================================================================== */
 
 /* ---------- Home - Headline styles ---------- */
-#headline {}
+#headline {
+  width: 85%;
+}
 
 #headline h1 {}
 
@@ -197,17 +231,34 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 3.125em 0;
 }
 
-aside h4 {}
+aside h4 {
+  margin: 0;
+}
 
-aside p {}
+aside p {
+  margin: 0.625em 0;
+}
 
 aside form {}
 
-input#email-input {}
+aside form h4 {
+  padding-top: 2.1875em;
+}
 
-input#submit {}
+input#email-input {
+  margin: 1.25em 0;
+  padding: 1.25em 0.75em;
+  width: 90%;
+}
+
+input#submit {
+  padding: 1.25em 0em;
+  width: 100%;
+  text-transform: uppercase;
+}
 
 /* ---------- Home - Features styles ---------- */
 #features {
@@ -220,6 +271,12 @@ input#submit {}
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
+  margin: 3.125em 0;
+}
+
+#features h1 {
+  padding-right: 0.05em;
 }
 
 .feature {
@@ -227,9 +284,13 @@ input#submit {}
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 2.5em;
+  text-align: center;
 }
 
-.feature img {}
+.feature img {
+  margin-bottom: 2.5em;
+}
 
 .feature p {}
 
@@ -245,6 +306,8 @@ input#submit {}
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
+  padding: 1.875em 0;
 }
 
 #review h1 {}
@@ -253,9 +316,13 @@ input#submit {}
 
 #review article img {}
 
-#review article h3 {}
+#review article h3 {
+  margin: 0.625em 0;
+}
 
-#review article p {}
+#review article p {
+  margin: 0.625em 0;
+}
 
 
 /* ==========================================================================
