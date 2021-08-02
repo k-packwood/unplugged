@@ -101,26 +101,60 @@ h4 {}
 p {}
 
 /* ---------- Main - Header styles ---------- */
-header {}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
-header .content-wrapper {} 
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+} 
 
 #logo {}
 
 .header-divider {}
 
-nav {}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
-nav ul {}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-nav ul li {}
+nav ul li { 
+  list-style: none;
+}
 
 /* ---------- Main - Footer styles ---------- */
-footer {}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
-footer .content-wrapper {}
+footer .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.contact {}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .contact h3 {}
 
@@ -128,7 +162,11 @@ footer .content-wrapper {}
 
 .contact address p {}
 
-.social-icons {}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .social-icons h3 {}
 
@@ -154,7 +192,12 @@ footer .content-wrapper {}
 
 /* ---------- Home - Aside + form styles ---------- */
 
-aside {}
+aside {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
 aside h4 {}
 
@@ -167,20 +210,42 @@ input#email-input {}
 input#submit {}
 
 /* ---------- Home - Features styles ---------- */
-#features {}
+#features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-#features .content-wrapper {}
+#features .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.feature {}
+.feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
 .feature img {}
 
 .feature p {}
 
 /* ---------- Home - Review styles ---------- */
-#review {}
+#review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
-#review .content-wrapper {}
+#review .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 #review h1 {}
 
@@ -198,7 +263,12 @@ input#submit {}
    ========================================================================== */
 
 /* ---------- About - Mission styles ---------- */
-#mission {}
+#mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
 #mission .content-wrapper {}
 
@@ -212,7 +282,12 @@ input#submit {}
 #map figure{}
 
 /* ---------- About - Contact styles ---------- */
-#contact-section {}
+#contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
 #contact-section .content-wrapper {}
 
@@ -241,9 +316,19 @@ input#submit {}
    ========================================================================== */
 
 /* ---------- FAQ - Main styles ---------- */
-#main {}
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
-#main .content-wrapper {}
+#main .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
 #main article {}
 
