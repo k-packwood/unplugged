@@ -90,7 +90,6 @@ textarea {
 /* ---------- Main - Base styles ---------- */
 body {
   font-size: 16px;
-  padding: 15px 20px 10px 20px; 
 }
 
 h1 {}
@@ -109,6 +108,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 1rem;
 }
 
 header .content-wrapper {
@@ -122,6 +122,7 @@ header .content-wrapper {
 .logo {
   width: 60%;
   padding: 0.645rem;
+  text-align: center;
 }
 
 .header-divider {}
@@ -154,13 +155,14 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding-top: 3.125rem;
+  padding: 3.125rem 1.25rem 0 1.25rem;
 }
 
 footer .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
 
 .contact {
@@ -217,10 +219,12 @@ footer .content-wrapper {
 
 /* ---------- Home - Headline styles ---------- */
 #headline {
-  width: 85%;
+  padding: 1.25rem;
 }
 
-#headline h1 {}
+#headline h1 {
+  width: 85%;
+}
 
 #headline img {}
 
@@ -231,7 +235,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 3.125rem 0;
+  padding: 3.125rem 1.25rem;
 }
 
 aside h4 {
@@ -255,7 +259,7 @@ input#email-input {
 }
 
 input#submit {
-  padding: 1.25rem 0rem;
+  padding: 1rem 0rem;
   width: 100%;
   text-transform: uppercase;
 }
@@ -265,6 +269,7 @@ input#submit {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 3.125rem 1.25rem;
 }
 
 #features .content-wrapper {
@@ -272,7 +277,6 @@ input#submit {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 3.125rem 0;
 }
 
 #features h1 {
@@ -300,6 +304,7 @@ input#submit {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 1.875rem 1.25rem;
 }
 
 #review .content-wrapper {
@@ -307,10 +312,11 @@ input#submit {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 1.875rem 0;
 }
 
-#review h1 {}
+#review h1 {
+  margin: 0;
+}
 
 #review article {}
 
@@ -334,7 +340,7 @@ input#submit {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3.125rem 0;
+  padding: 3.125rem 1.25rem;
 }
 
 #mission .content-wrapper {
@@ -363,7 +369,7 @@ input#submit {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3.125rem 0;
+  padding: 3.125rem 1.25rem;
 }
 
 #contact-section .content-wrapper {
@@ -418,6 +424,7 @@ input#submit {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 0 1.25rem;
 }
 
 #main .content-wrapper {
@@ -531,15 +538,143 @@ input#submit {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+  /* ---------- Tablet --------- */
+@media only screen and (min-width: 768px) {
+  /* Header */
+  header {
+    padding: 1.875rem 3.75rem;
+  }
+
+  header .content-wrapper {
+    justify-content: space-between;
+  }
+
+  nav {
+    width: 20%;
+  }
+
+  .logo {
+    width: 35%;
+    padding: 0;
+    text-align: left;
+  }
+
+  /* Home - Headline */
+  #headline {
+    padding: 6.25rem 3.75rem;
+  }
+
+  #headline h1 {
+    width: 70%;
+  }
+
+  /* Home - Aside */
+  aside {
+    justify-content: space-between;
+    padding: 3.125rem 3.75rem;
+  }
+
+  #join {
+    width: 40%;
+  }
+
+  aside form {
+    width: 45%;
+  }
+
+  input#email-input {
+    padding: 1rem 0.75rem;
+  }
+
+  input#submit {
+    padding: 0.75rem 0;
+  }
+
+  /* Home - Features */
+  #features {
+    padding: 6.25rem 3.75rem;
+  }
+
+  #features .content-wrapper {
+    justify-content: space-around;
+  }
+
+  .feature {
+    width: 30%;
+    padding: 1em;
+  }
+
+  /* Home - Review */
+  #review {
+    padding: 3.125rem 3.75rem;
+  }
+
+  #review .content-wrapper {
+    justify-content: space-between;
+  }
+
+  #review h1 {
+    width: 65%;
+  }
+
+  /* FAQ - Article */
+  #main {
+    padding: 6.25rem 3.75rem;
+  }
+
+  #main .content-wrapper {
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  #main h1 {
+    padding-bottom: 1.875rem;
+  }
+
+  #main article {
+    width: 46%;
+    padding-bottom: 3.125rem;
+  }
+
+  /* About - Missions */
+  #mission {
+    padding: 6.25rem 3.75rem;
+  }
+
+  #mission h1 {
+    padding-bottom: 2.5rem;
+  }
+
+  #mission p {
+    columns: 2;
+  }
+
+  /* About - Contact section */
+  #contact-section {
+    padding: 6.25rem 3.75rem;
+  }
+
+  #contact-section .content-wrapper {
+    justify-content: space-between;
+  }
+
+  /* Footer */
+  footer .content-wrapper {
+    justify-content: space-around;
+  }
+
+  .contact {
+    width: 25%;
+  }
+
+  .social-icons {
+    width: 30%
+  }
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+/* ---------- Desktop --------- */
+@media only screen and (min-width: 1200px) {
+
 }
 
 /* ==========================================================================
