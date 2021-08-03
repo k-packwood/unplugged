@@ -224,6 +224,7 @@ footer .content-wrapper {
 
 #headline h1 {
   width: 85%;
+  margin: 0;
 }
 
 #headline img {}
@@ -374,7 +375,7 @@ input#submit {
 
 #contact-section .content-wrapper {
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
   align-items: center;
   flex-flow: row wrap;
 }
@@ -647,6 +648,7 @@ input#submit {
 
   #mission p {
     columns: 2;
+    column-gap: 4.375rem;
   }
 
   /* About - Contact section */
@@ -655,7 +657,16 @@ input#submit {
   }
 
   #contact-section .content-wrapper {
-    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  #contact-section h1 {
+    width: 100%;
+    margin-right: 8.125rem;
+  }
+
+  #chat {
+    margin-right: 1.25rem;
   }
 
   /* Footer */
@@ -674,7 +685,93 @@ input#submit {
 
 /* ---------- Desktop --------- */
 @media only screen and (min-width: 1200px) {
+  /* Header */
+  header {
+    padding: 1.5625rem 7.5rem;
+  }
 
+  /* Home - Headline */
+  #headline {
+    padding: 3.125rem 7.5rem;
+  }
+
+  /* Home - Aside */
+  aside {
+    padding: 3.125rem 12.5rem;
+  }
+
+  input#email-input {   
+    padding: 1rem 1rem;
+  }
+
+  input#submit {
+    padding: 1rem 0;
+  }
+
+  /* Home - Features */
+  #features {
+    padding: 6.25rem 7.5rem;
+  }
+
+  #features h1 {
+    padding-right: 6.25rem;
+  }
+
+  .feature {
+    width: 15%;
+    padding: 3.75rem;
+  }
+
+  /* Home - Review */
+  #review {
+    padding: 6.25rem 7.5rem 4.375rem 7.5rem;
+  }
+
+  #review h1 {
+    padding-bottom: 4.375rem;
+  }
+
+  /* FAQ - main */
+  #main {
+    padding: 6.25rem 7.5rem 3.125rem 7.5rem;
+  }
+
+  #main h1 {
+    width: 100%;
+    padding-right: 18rem;
+  }
+
+  /* About - Mission */ 
+  #mission {
+    padding: 6.25rem 7.5rem;
+  }
+
+  #mission p {
+    column-gap: 2.5rem;
+  }
+
+  /* About - Contact */ 
+  #contact-section {
+    padding: 6.25rem 7.5rem;
+  }
+
+  #contact-section h3 {
+    margin: 2.5rem 0;
+  }
+
+  #chat {
+    margin-right: 6.875rem;
+  }
+
+  /* Footer */
+  footer {
+    padding: 6.25rem 11.25rem 1.25rem 11.25rem;
+  }
+
+  footer .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 /* ==========================================================================
