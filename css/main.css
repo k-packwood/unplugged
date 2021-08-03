@@ -84,23 +84,57 @@ textarea {
 }
 
 /* ==========================================================================
-   BASE STYLES
+   Author's custom styles
    ========================================================================== */
-
-/* ---------- Main - Base styles ---------- */
+/* ------------------------------------------------------------------------------------- */
+/* ---------- Main - Base styles ------------------------------------------------------- */
 body {
   font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
 }
 
-h1 {}
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+  font-weight: normal;
+  margin: 0;
+}
 
-h2 {}
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+  font-weight: normal;
+  margin: 0;
+}
 
-h3 {}
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  font-weight: normal;
+  margin: 0;
+}
 
-h4 {}
+p {
+  font-size: 1em;
+  line-height: 1.285;
+}
 
-p {}
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+
+address {
+  font-style: normal;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
 /* ---------- Main - Header styles ---------- */
 header {
@@ -112,10 +146,6 @@ header {
 }
 
 header .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
   width: 100%;
 } 
 
@@ -145,8 +175,9 @@ nav ul {
 
 nav ul li { 
   list-style: none;
-  padding: 1rem;
+  padding: 1rem 1.875rem;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 /* ---------- Main - Footer styles ---------- */
@@ -158,12 +189,7 @@ footer {
   padding: 3.125rem 1.25rem 0 1.25rem;
 }
 
-footer .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
+footer .content-wrapper {}
 
 .contact {
   display: flex;
@@ -212,25 +238,17 @@ footer .content-wrapper {
   margin: 0;
 }
 
-
-/* ==========================================================================
-    HOME 
-   ========================================================================== */
-
-/* ---------- Home - Headline styles ---------- */
+/* ------------------------------------------------------------------------------------- */
+/* ---------- Home - Headline styles --------------------------------------------------- */
 #headline {
   padding: 1.25rem;
 }
 
-#headline h1 {
-  width: 85%;
-  margin: 0;
-}
+#headline h1 {}
 
 #headline img {}
 
 /* ---------- Home - Aside + form styles ---------- */
-
 aside {  
   display: flex;
   justify-content: center;
@@ -239,24 +257,16 @@ aside {
   padding: 3.125rem 1.25rem;
 }
 
-aside h4 {
-  margin: 0;
-}
-
-aside p {
-  margin: 0.625rem 0;
-}
-
-aside form {}
-
-aside form h4 {
-  padding-top: 2.1875rem;
+#join {
+  margin-bottom: 2.1875rem;
 }
 
 input#email-input {
   margin: 1.25rem 0;
   padding: 1.25rem 0.75rem;
   width: 90%;
+  font-style: italic;
+  color: #e2e3ed;
 }
 
 input#submit {
@@ -274,13 +284,9 @@ input#submit {
 }
 
 #features .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
-#features h1 {
+#features h2 {
   padding-right: 0.05rem;
 }
 
@@ -309,13 +315,9 @@ input#submit {
 }
 
 #review .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
-#review h1 {
+#review h2 {
   margin: 0;
 }
 
@@ -331,12 +333,8 @@ input#submit {
   margin: 0.625rem 0;
 }
 
-
-/* ==========================================================================
-    ABOUT 
-   ========================================================================== */
-
-/* ---------- About - Mission styles ---------- */
+/* ------------------------------------------------------------------------------------- */
+/* ---------- About - Mission styles --------------------------------------------------- */
 #mission {
   display: flex;
   justify-content: center;
@@ -345,13 +343,9 @@ input#submit {
 }
 
 #mission .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
-#mission h1 {
+#mission h2 {
   padding-bottom: 1rem;
   margin: 0;
 }
@@ -374,13 +368,10 @@ input#submit {
 }
 
 #contact-section .content-wrapper {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
-#contact-section h1 {
+#contact-section h2 {
   padding-bottom: 0.625rem;
 }
 
@@ -396,7 +387,6 @@ input#submit {
 #general-info address p {
   margin: 0;
   margin-bottom: 1rem;
-  font-style: normal;
 }
 
 #chat {}
@@ -410,16 +400,10 @@ input#submit {
 
 #chat address p {
   margin: 0;
-  font-style: normal;
 }
 
-
-
-/* ==========================================================================
-    FAQ 
-   ========================================================================== */
-
-/* ---------- FAQ - Main styles ---------- */
+/* ------------------------------------------------------------------------------------- */
+/* ---------- FAQ - Main styles -------------------------------------------------------- */
 #main {
   display: flex;
   justify-content: center;
@@ -429,13 +413,9 @@ input#submit {
 }
 
 #main .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
-#main h1 {
+#main h2 {
   padding: 1.5625rem 0;
   margin: 0
 }
@@ -572,6 +552,7 @@ input#submit {
   /* Home - Aside */
   aside {
     justify-content: space-between;
+    align-items: baseline;
     padding: 3.125rem 3.75rem;
   }
 
@@ -614,7 +595,7 @@ input#submit {
     justify-content: space-between;
   }
 
-  #review h1 {
+  #review h2 {
     width: 65%;
   }
 
@@ -628,7 +609,7 @@ input#submit {
     align-items: baseline;
   }
 
-  #main h1 {
+  #main h2 {
     padding-bottom: 1.875rem;
   }
 
@@ -642,8 +623,9 @@ input#submit {
     padding: 6.25rem 3.75rem;
   }
 
-  #mission h1 {
+  #mission h2 {
     padding-bottom: 2.5rem;
+    margin-right: 1.75rem;
   }
 
   #mission p {
@@ -660,9 +642,10 @@ input#submit {
     align-items: baseline;
   }
 
-  #contact-section h1 {
+  #contact-section h2 {
     width: 100%;
     margin-right: 8.125rem;
+    margin-bottom: 3.75rem;
   }
 
   #chat {
@@ -713,12 +696,13 @@ input#submit {
     padding: 6.25rem 7.5rem;
   }
 
-  #features h1 {
+  #features h2 {
+    width: 100%;
     padding-right: 6.25rem;
   }
 
   .feature {
-    width: 15%;
+    width: 20%;
     padding: 3.75rem;
   }
 
@@ -727,7 +711,7 @@ input#submit {
     padding: 6.25rem 7.5rem 4.375rem 7.5rem;
   }
 
-  #review h1 {
+  #review h2 {
     padding-bottom: 4.375rem;
   }
 
@@ -736,7 +720,7 @@ input#submit {
     padding: 6.25rem 7.5rem 3.125rem 7.5rem;
   }
 
-  #main h1 {
+  #main h2 {
     width: 100%;
     padding-right: 18rem;
   }
