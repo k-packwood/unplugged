@@ -91,6 +91,8 @@ textarea {
 body {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
+  background-color: #202322;
+  color: #e2e3ed;
 }
 
 h1 {
@@ -103,6 +105,7 @@ h1 {
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  line-height: 1.285em;
   font-weight: normal;
   margin: 0;
 }
@@ -155,7 +158,10 @@ header .content-wrapper {
   text-align: center;
 }
 
-.header-divider {}
+.header-divider {
+  width: 100%;
+  border: 0.5px solid #3a3a3a;
+}
 
 nav {
   display: flex;
@@ -175,7 +181,7 @@ nav ul {
 
 nav ul li { 
   list-style: none;
-  padding: 1rem 1.875rem;
+  padding: 1rem 1.875rem 0 1.875rem;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -186,7 +192,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 3.125rem 1.25rem 0 1.25rem;
+  padding: 3.125rem 1.25rem 0.625rem 1.25rem;
 }
 
 footer .content-wrapper {}
@@ -255,10 +261,15 @@ aside {
   align-items: center;
   flex-flow: row wrap;
   padding: 3.125rem 1.25rem;
+  background-color: #527158;
 }
 
 #join {
   margin-bottom: 2.1875rem;
+}
+
+input {
+  font-family: 'Poppins', sans-serif;
 }
 
 input#email-input {
@@ -273,6 +284,10 @@ input#submit {
   padding: 1rem 0rem;
   width: 100%;
   text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  background-color: #2a423a;
+  color: #e2e3ed;
 }
 
 /* ---------- Home - Features styles ---------- */
@@ -312,6 +327,7 @@ input#submit {
   align-items: center;
   flex-flow: row wrap;
   padding: 1.875rem 1.25rem;
+  background-color: #2a423a;
 }
 
 #review .content-wrapper {
@@ -340,6 +356,7 @@ input#submit {
   justify-content: center;
   align-items: center;
   padding: 3.125rem 1.25rem;
+  background-color: #527158;
 }
 
 #mission .content-wrapper {
@@ -365,6 +382,7 @@ input#submit {
   justify-content: center;
   align-items: center;
   padding: 3.125rem 1.25rem;
+  background-color: #2a423a;
 }
 
 #contact-section .content-wrapper {
@@ -409,15 +427,15 @@ input#submit {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 0 1.25rem;
+  padding: 3.125rem 1.25rem 1.5625rem 1.25rem;
+  background-color: #527158;
 }
 
 #main .content-wrapper {
 }
 
 #main h2 {
-  padding: 1.5625rem 0;
-  margin: 0
+  margin-bottom: 3.125rem;
 }
 
 #main article {
@@ -530,15 +548,24 @@ input#submit {
     justify-content: space-between;
   }
 
-  nav {
-    width: 20%;
+  .header-divider {
+    display: none;
   }
-
+  
   .logo {
     width: 35%;
     padding: 0;
     text-align: left;
   }
+
+  nav {
+    width: 20%;
+  }
+
+  nav ul li {
+    padding: 0rem 1.875rem;
+  }
+
 
   /* Home - Headline */
   #headline {
@@ -579,6 +606,11 @@ input#submit {
 
   #features .content-wrapper {
     justify-content: space-around;
+    align-items: baseline;
+  }
+
+  #features h2 {
+    margin-bottom: 2.5rem;
   }
 
   .feature {
@@ -601,7 +633,7 @@ input#submit {
 
   /* FAQ - Article */
   #main {
-    padding: 6.25rem 3.75rem;
+    padding: 6.25rem 3.75rem 3.125rem 3.75rem;
   }
 
   #main .content-wrapper {
@@ -610,7 +642,7 @@ input#submit {
   }
 
   #main h2 {
-    padding-bottom: 1.875rem;
+    margin-bottom: 1.875rem;
   }
 
   #main article {
@@ -653,16 +685,20 @@ input#submit {
   }
 
   /* Footer */
+  footer {
+    padding: 5.645rem 9.375rem 0.625rem 9.375rem;
+  }
+
   footer .content-wrapper {
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .contact {
-    width: 25%;
+    width: 40%;
   }
 
   .social-icons {
-    width: 30%
+    width: 40%;
   }
 }
 
@@ -676,6 +712,10 @@ input#submit {
   /* Home - Headline */
   #headline {
     padding: 3.125rem 7.5rem;
+  }
+
+  #headline h1 {
+    width: 55%;
   }
 
   /* Home - Aside */
@@ -730,6 +770,10 @@ input#submit {
     padding: 6.25rem 7.5rem;
   }
 
+  #mission h2 {
+    padding-bottom: 1.25rem;
+  }
+
   #mission p {
     column-gap: 2.5rem;
   }
@@ -739,12 +783,17 @@ input#submit {
     padding: 6.25rem 7.5rem;
   }
 
+  #contact-section h2 {
+    padding: 0;
+    margin: 0;
+  }
+
   #contact-section h3 {
-    margin: 2.5rem 0;
+    margin: 1.25rem 0;
   }
 
   #chat {
-    margin-right: 6.875rem;
+    margin-right: 13.75rem;
   }
 
   /* Footer */
