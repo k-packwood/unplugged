@@ -285,9 +285,10 @@ input {
 input#email-input {
   margin: 1.25rem 0;
   padding: 1.25rem 0.75rem;
-  width: 90%;
+  width: 100%;
   font-style: italic;
   color: #e2e3ed;
+  box-sizing: border-box;
 }
 
 input#submit {
@@ -679,8 +680,18 @@ input#submit {
     padding: 3.125rem 3.75rem;
   }
 
+  #review figure {
+    width: 49%;
+  }
+
+  #review article {
+    width: 49%;
+    padding-left: 0.3125rem;
+  }
+
   #review .content-wrapper {
     justify-content: space-between;
+    align-items: end;
   }
 
   #review h2 {
@@ -764,18 +775,22 @@ input#submit {
 
 /* ---------- Desktop --------- */
 @media only screen and (min-width: 1200px) {
-    /* General styles */
-    h1 {
-      font-size: 3.75rem;
-    }
-  
-    h2 {
-      font-size: 3rem;
-    }
-  
-    h3 {
-      font-size: 1.875rem;
-    }
+  /* General styles */
+  h1 {
+    font-size: 3.75rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 1.875rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+  }
 
   /* Header */
   header {
@@ -830,6 +845,7 @@ input#submit {
 
   #review h2 {
     padding-bottom: 4.375rem;
+    width: 80%;
   }
 
   /* FAQ - main */
