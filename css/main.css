@@ -330,8 +330,10 @@ input#submit {
   text-align: center;
 }
 
-.feature img {
+.feature i {
+  font-size: 3.75rem;
   margin-bottom: 2.5rem;
+  width: 100%;
 }
 
 .feature p {}
@@ -673,6 +675,11 @@ input#submit {
   .feature {
     width: 30%;
     padding: 1em;
+  }
+
+  .feature i {
+    font-size: 4.5rem; 
+    margin-bottom: 1.875rem;
   }
 
   /* Home - Review */
