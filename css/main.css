@@ -152,6 +152,19 @@ header .content-wrapper {
   width: 100%;
 } 
 
+header figure {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  max-width: 100%;
+}
+
+header figure img {
+  width: 100%;
+}
+
 .logo {
   width: 60%;
   padding: 0.645rem;
@@ -350,7 +363,17 @@ input#submit {
 
 #review article {}
 
-#review article img {}
+#review figure {
+  margin: 1.25rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+#review figure img {
+  width: 100%;
+}
 
 #review article h3 {
   margin: 0.625rem 0;
