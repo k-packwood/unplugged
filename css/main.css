@@ -764,9 +764,26 @@ input#submit {
 
 /* ---------- Desktop --------- */
 @media only screen and (min-width: 1200px) {
+    /* General styles */
+    h1 {
+      font-size: 3.75rem;
+    }
+  
+    h2 {
+      font-size: 3rem;
+    }
+  
+    h3 {
+      font-size: 1.875rem;
+    }
+
   /* Header */
   header {
     padding: 1.5625rem 7.5rem;
+  }
+
+  header figure {
+    width: 30%;
   }
 
   /* Home - Headline */
@@ -836,6 +853,11 @@ input#submit {
 
   #mission p {
     column-gap: 2.5rem;
+  }
+
+  /* About - Map */ 
+  #map figure {
+    padding-bottom: 28.125rem;
   }
 
   /* About - Contact */ 
